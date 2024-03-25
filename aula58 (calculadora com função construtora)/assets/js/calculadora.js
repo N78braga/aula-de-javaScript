@@ -1,5 +1,5 @@
 function Calculadora(){
-    this.dispaly= document.querySelector('.display');
+    this.dispaly = document.querySelector('.display');
 
 
     this.iniciar = () =>{
@@ -8,7 +8,7 @@ function Calculadora(){
     };
 
     this.capturaEnter = () => {
-        document.addEventListener('keyup', e => {
+        this.dispaly.addEventListener('keypress', e => {
             if (e.KeyCode === 13){
                 this.resultado();
             } 
